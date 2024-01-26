@@ -1,0 +1,4 @@
+{
+    "db":"mongodb://localhost/task4",
+    "jwtPrivateKey":"secretKey"
+}

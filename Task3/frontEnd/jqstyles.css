@@ -1,0 +1,53 @@
+ /* Global Styles */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+    background-color: #343a40; /* Dark background color */
+    color: #dc3545; /* Text color */
+    padding: 15px; /* Add padding for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    font-weight: 100;
+    font-size: 20rem;
+  }
+
+  .navbar-brand{
+      
+    color: #ffffff; /* Navbar text color */
+  }
+  .custom-navbar-brand {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #ffffff; /* Navbar toggle icon color */
+  }
+
+
+  .float-right {
+    background-color: #343a40; /* Dark background color */
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+
+  }
+
+  /* Media Queries */
+  @media (max-width: 767px) {
+    /* Adjust styles for smaller screens */
+    .container {
+      padding: 0;
+    }
+
+    .my-tasks {
+      margin: 20px 0;
+    }
+
+ 
+  }

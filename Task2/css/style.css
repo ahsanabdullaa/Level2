@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+
+}
+/* universal text color */
+
+/* for text selection background*/
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: rgb(146, 43, 38);
+}
+  
+::selection {
+    color: white;
+    background: rgb(146, 43, 38);
+}
+
+
+.un-text-color{
+    color: rgb(146, 43, 38);
+}
+
+/* red line under headings and text */
+.separator{
+    background: rgb(146, 43, 38);
+    position: relative;
+    width: 70px;
+    height: 3px;
+    /* margin: 10px 0; */
+}
+.centered{
+    margin: 10px auto;
+}
+
+/* Header Styling */
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), url("../images/main-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.header-content{
+    height: 80vh;
+    margin: 0 auto ;
+    padding: 0;
+    }
+header .header-btns .btn-1{
+    background: rgba(247,70,90,255);
+    border: 1px solid rgba(247,70,90,255);
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    color: white;
+    transition: 0.3s;
+
+}
+header .header-btns .btn-1:hover{
+    background: white;
+    border: 1px solid white;
+    color: rgba(247,70,90,255);
+
+}
+header .header-btns .btn-2{
+    background: none;
+    border: 1px solid rgba(247,70,90,255);
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    color: white;
+    transition: 0.3s;
+
+}
+header .header-btns .btn-2:hover{
+    background: rgba(247,70,90,255);
+    color: white;
+}
+.header-heading{
+    font-size: 2rem;
+    /* margin: 2rem auto; */
+}
+
+.header-para {
+    font-size: 1rem;
+    color: rgb(70, 129, 75);
+}
+
+.dot{
+    background: rgb(146, 43, 38);
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0.2rem 1rem;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.dot-green{
+    background: rgb(70, 129, 75);
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0.2rem 1rem;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+.go-down {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 40px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(70, 129, 75);
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 6px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+
+.blink {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+    animation: blink 1s linear infinite;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(-45deg);
+}
+  
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+/* Header Styling End*/
+
+
+/* How things are done section */
+.how-things-are-done{
+   background-color: rgb(70, 129, 75);
+    /* height: 70vh; */
+    color: white;
+}
+.how-things-are-done .section .picture img{
+    border: 2px solid white;
+    width: 400px;
+    height: 300px;
+}
+/* How things are done section End */
+
+@media only screen and (max-width: 992px) {
+    .how-things-are-done .section .picture img{
+        width: 350px;
+        height: 250px;
+    }
+    
+}
+
+/* footer section */
+footer{
+    background-color: rgb(146, 43, 38);
+    color: white;
+    padding: 3rem 0;
+}
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(62, 81, 255);
+}
+
+/* footer section End */
